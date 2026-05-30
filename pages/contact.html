@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - One Piece</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+
+    <header id="entete-principal">
+        <div id="logo-titre">
+            <span id="logo-symbole">☠</span>
+            <div id="titres">
+                <h1 id="titre-site">ONE PIECE</h1>
+                <p id="sous-titre">L'Encyclopédie des Pirates</p>
+            </div>
+        </div>
+    </header>
+
+    <nav id="menu-principal">
+        <ul class="liste-navigation">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="personnages.html">Personnages</a></li>
+            <li><a href="equipage.html">Équipage</a></li>
+            <li><a href="fruits.html">Fruits du Démon</a></li>
+            <li><a href="contact.html" class="lien-actif">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenu-principal">
+
+        <section id="section-contact">
+
+            <h2 id="titre-page">Contact</h2>
+
+            <p id="intro-contact">
+                Une question, une suggestion ou une erreur à signaler ?
+                Envoyez-nous un message !
+            </p>
+
+            <form id="formulaire-contact" action="#" method="post">
+
+                <div class="champ-formulaire">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </div>
+
+                <div class="champ-formulaire">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                </div>
+
+                <div class="champ-formulaire">
+                    <label for="sujet">Sujet</label>
+                    <select id="sujet" name="sujet">
+                        <option value="">-- Choisir un sujet --</option>
+                        <option value="suggestion">Suggestion de contenu</option>
+                        <option value="erreur">Signaler une erreur</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="champ-formulaire">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Votre message..." required></textarea>
+                </div>
+
+                <button type="submit" id="bouton-envoyer">Envoyer ↗</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer id="pied-de-page">
+        <div id="contenu-footer">
+            <p class="texte-footer">© 2026 One Piece - L'Encyclopédie des Pirates</p>
+            <p class="texte-footer">Site fan non officiel. One Piece est la propriété d'Eiichiro Oda / Shueisha.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
